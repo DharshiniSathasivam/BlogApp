@@ -5,7 +5,7 @@ import Card from './pages/Card'
 import NavBar from './HomePage/NavBar'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import PostForm from './pages/PostForm'
-import Footer from './HomePage/footer'
+import Footer from './HomePage/Footer'
 import Register from './pages/Register'
 import Login from './pages/Login'
 
