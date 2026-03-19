@@ -26,7 +26,7 @@ function Card() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/posts')
+        const response = await axios.get('https://blogapp-backend-ojrf.onrender.com/api/posts')
         const data=response.data.posts || response.data
         const sorted=data.sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt))
         setPosts(sorted)
@@ -43,7 +43,7 @@ function Card() {
   const handleDelete = async (postId) => {
   if (!window.confirm('Are you sure you want to delete this post?')) return
   try {
-    await axios.delete(`http://localhost:5000/api/posts/${postId}`, {
+    await axios.delete(`https://blogapp-backend-ojrf.onrender.com/api/posts/${postId}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
     })
     setPosts(posts => posts.filter(p => p._id !== postId))  // ← removes from UI

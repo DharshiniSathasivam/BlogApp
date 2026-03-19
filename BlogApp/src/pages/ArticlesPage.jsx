@@ -13,7 +13,7 @@ function ArticlesPage() {
       useEffect(()=>{
         const fetchPost =async()=>{
           try{
-            const res =await axios.get(`http://localhost:5000/api/posts/${id}`)
+            const res =await axios.get(`https://blogapp-backend-ojrf.onrender.com/api/posts/${id}`)
             setPost(res.data)
           }
           catch(err){
@@ -35,11 +35,11 @@ function ArticlesPage() {
     <div className="post-detail">
        <div className="detail-cover"
        style={{background:post.image 
-        ? `url(${post.image}) cover`
+        ? `url(${post.image})center/ cover`
         :'linear-gradient(360deg,black,blue)'
        }}/>
        <div className='detail-body'>
-        {postMessage.tags && (
+        {post.tags && (
           <div className='card-tags'>
             {post.tags.split(',').map(t=>t.trim()).filter(Boolean).map(tag=>(
               <span key={tag} className='card-tag'>{tag}</span>

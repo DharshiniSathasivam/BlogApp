@@ -15,7 +15,7 @@ function Register() {
     }
     setLoading(true)
     try {
-      await axios.post('http://localhost:5000/api/auth/register', form)
+      await axios.post('https://blogapp-backend-ojrf.onrender.com/api/auth/register', form)
       alert('Account created! Please login.')
       navigate('/login')
     } catch (err) {

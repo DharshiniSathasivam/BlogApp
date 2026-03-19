@@ -15,7 +15,7 @@ function Login() {
     }
     setLoading(true)
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', form)
+      const res = await axios.post('https://blogapp-backend-ojrf.onrender.com/api/auth/login', form)
       // Save to localStorage
       localStorage.setItem('token', res.data.token)
       localStorage.setItem('username', res.data.username)

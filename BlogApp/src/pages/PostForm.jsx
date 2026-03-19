@@ -3,7 +3,7 @@ import '../Styles/Form.css'
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
  
-const API = 'http://localhost:5000/api';
+const API = 'https://blogapp-backend-ojrf.onrender.com/api';
  
 function PostForm() {
  
