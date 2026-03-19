@@ -35,13 +35,13 @@ function Footer() {
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Pencraft. All rights reserved.</p>
         <div className="footer-socials">
-          <a href="#" title="Twitter">
+          <a href="https://x.com/DHARSHINI200307" title="Twitter">
                <FaSquareXTwitter size={20} />
           </a>
-          <a href="#" title="GitHub">
+          <a href="https://github.com/DharshiniSathasivam" title="GitHub">
               <FaGithub size={20} />
           </a>
-          <a href="#" title="LinkedIn">
+          <a href="www.linkedin.com/in/dharshini-sathasivam" title="LinkedIn">
               <FaLinkedin size={20} />
           </a>
         </div>
